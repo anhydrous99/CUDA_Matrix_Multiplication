@@ -1,6 +1,6 @@
 
-#ifndef CUMATRIX_CUH
-#define CUMATRIX_CUH
+#ifndef CUMATRIX_H
+#define CUMATRIX_H
 #include <ostream>
 
 struct cumatrix {
@@ -61,8 +61,8 @@ struct cumatrix {
   void fill_rand();
 };
 
-std::ostream& operator << (std::ostream& out, const cumatrix& mat);
+std::ostream& operator<<(std::ostream& out, const cumatrix& mat);
 
 cumatrix operator*(cumatrix& a, cumatrix& b);
 
-#endif // CUMATRIX_CUH
+#endif // CUMATRIX_H
